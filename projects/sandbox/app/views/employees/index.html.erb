@@ -1,0 +1,19 @@
+<div class = "page-header">
+  <h1> All of your employees</h1>
+</div>
+<h1>Listing employees</h1>
+
+<%= link_to "Add a new employee", new_employee_path, class: "btn btn-success " %>
+<% @employees.each do |employee| %>
+  <div class="employee">
+    <strong><%=employee.firstname %></strong>
+      <p><%=employee.startdate %></p>
+        <div class = "meta">
+          <%= link_to "Show", employee %>
+          <span class = "admin">
+            <%=link_to "Edit", edit_employee_path(employee)%>
+            <%=link_to "Delete", employee, method: :delete, data:{ confirm: "Are you sure?" } %>
+          </span>
+        </div>
+  </div>    
+<%end%>

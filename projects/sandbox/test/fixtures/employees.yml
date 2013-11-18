@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  vacation: 1
+  startdate: 2013-11-10
+  type: 
+  manager: MyString
+  salary: 1
+  sickdays: 1
+  documents: 1
+
+two:
+  firstname: MyString
+  lastname: MyString
+  vacation: 1
+  startdate: 2013-11-10
+  type: 
+  manager: MyString
+  salary: 1
+  sickdays: 1
+  documents: 1

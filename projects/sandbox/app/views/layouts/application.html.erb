@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sandbox</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+   <!-- <meta name="viewport" content="width=device-width"> -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+   
+</head>
+<body>
+<div class="container-fluid">
+<p class ="notice"><%= notice %></p>
+<p class ="alert"><%= alert%> </p>
+
+<div class="container">
+      <div class="row-fluid">
+    	<div class="span2">
+    		<div class="sidebar">
+	        <ul class="nav nav-list bs-docs-sidenav affix-top">
+	          <li>
+	            <a href="#buttonDropdowns"><i class="icon-chevron-right"></i> Home</a>
+	          </li>
+	          <li>
+	            <a href="Hiring.html"><i class="icon-chevron-right"></i> Hiring</a>
+	          </li>
+	          <li class="active">
+	            <a href="OnBoarding.html"><i class="icon-chevron-right"></i> OnBoarding</a>
+	          </li>
+	          <li>
+	            <a href="Manage.html"><i class="icon-chevron-right"></i> Manage Employee</a>
+	          </li>
+	          <li>
+	            <a href="Terminate.html"><i class="icon-chevron-right"></i> Terminate Employee</a>
+	          </li>
+	        </ul>
+     		</div>
+     	</div>
+     
+     
+
+<div class="span10">
+      
+    <div class="container">
+		<%= yield %>
+	</div>
+	</div>
+</div>
+</body>
+</html>
+

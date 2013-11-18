@@ -1,0 +1,71 @@
+.sidebar {
+	margin: 80px 10px;
+}
+
+
+.span3 {
+   width: 165px;
+}
+
+.nav-list {
+  background-color: rgb(25, 48, 72);
+  height: 1000px;
+  /*
+  padding-left: 0px;
+  */
+}
+
+.nav-list a {
+  color: #FFFFFF;
+}
+
+.nav-list>.active>a,
+.nav-list>li>a:hover,
+.nav-list .nav-header {
+  background-color: #0088cc;
+  height: 50px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { 
+  background-color: #0088cc;
+}
+
+li {
+  height: 50px;
+}
+
+div.blank-top {
+  height: 200px;
+}
+
+.blank-header-left {
+  float: left;
+  font-size:28px;
+  padding: 30px 0 0 10px; 
+}
+
+.blank-header-right {
+  float:right;
+  padding: 30px 10px 0 0;
+}
+
+.span9 {
+  height: 400px;
+  width: 800px;
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
