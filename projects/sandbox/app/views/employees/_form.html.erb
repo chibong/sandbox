@@ -1,4 +1,6 @@
+
 <%= simple_form_for(@employee, html: {class: "form-horizontal"}) do |f| %>
+
   <% if @employee.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
@@ -12,39 +14,35 @@
   <% end %>
 
 
+  <%= f.input :user_id %>
+
   <div class="field">
-    <%= f.label :firstname %><br>
-    <%= f.text_field :firstname %>
+    <%= f.input :firstname %>
   </div>
   <div class="field">
-    <%= f.label :lastname %><br>
-    <%= f.text_field :lastname %>
+    
+    <%= f.input :lastname %>
   </div>
   <div class="field">
-    <%= f.label :vacation %><br>
-    <%= f.number_field :vacation %>
+    <%= f.input :vacation %>
   </div>
   <div class="field">
-    <%= f.label :startdate %><br>
-    <%= f.date_select :startdate %>
+    <%= f.inputzz :startdate %>
   </div>
   <div class="field">
-    <%= f.label :manager %><br>
-    <%= f.text_field :manager %>
+    <%= f.input :manager %>
   </div>
   <div class="field">
-    <%= f.label :salary %><br>
-    <%= f.number_field :salary %>
+    <%= f.input :salary %>
   </div>
   <div class="field">
-    <%= f.label :sickdays %><br>
-    <%= f.number_field :sickdays %>
+    <%= f.input :sickdays %>
   </div>
   <div class="field">
-    <%= f.label :documents %><br>
-    <%= f.number_field :documents %>
+    <%= f.input :documents %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>
+
   </div>
 <% end %>
