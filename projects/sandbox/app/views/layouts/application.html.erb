@@ -10,10 +10,23 @@
    
 </head>
 <body>
+<ul>
+	        	<% if user_signed_in? %>
+	        	<li><%= link_to current_user.full_name,edit_user_registration_path%></li>
+	        	<li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+	        
+	        	<% else %>
+	        	<li><%= link_to "Register", new_user_registration_path %></li>
+	        	<li><%= link_to "Log in", new_user_session_path %>
+	        	<%end%>
+</ul>
+
 <div class="container-fluid">
 
 <p class ="notice"><%= notice %></p>
 <p class ="alert"><%= alert%> </p>
+
+
 
 <div class="container">
       <div class="row-fluid">
@@ -36,6 +49,7 @@
 	            <a href="Terminate.html"><i class="icon-chevron-right"></i> Terminate Employee</a>
 	          </li>
 	        </ul>
+
      		</div>
      	</div>
      

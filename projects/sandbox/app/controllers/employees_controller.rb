@@ -5,11 +5,13 @@
   # GET /employees.json
   def index
     @employees = Employee.all
+
   end
 
   # GET /employees/1
   # GET /employees/1.json
   def show
+    
   end
 
   # GET /employees/new

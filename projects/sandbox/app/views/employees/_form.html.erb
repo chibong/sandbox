@@ -14,7 +14,7 @@
   <% end %>
 
 
-  <%= f.input :user_id %>
+  <%= f.input :user_id, collection: User.all, label_method: :full_name%>
 
   <div class="field">
     <%= f.input :firstname %>
@@ -27,7 +27,7 @@
     <%= f.input :vacation %>
   </div>
   <div class="field">
-    <%= f.inputzz :startdate %>
+    <%= f.input  :startdate %>
   </div>
   <div class="field">
     <%= f.input :manager %>
